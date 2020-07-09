@@ -1,0 +1,120 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://info.gd" type="Script" id=1]
+[ext_resource path="res://guns/Rifles/Vandal.gd" type="Script" id=2]
+[ext_resource path="res://guns/SMGs/Stinger.gd" type="Script" id=3]
+[ext_resource path="res://guns/Rifles/Phantom.gd" type="Script" id=4]
+[ext_resource path="res://guns/SMGs/Spectre.gd" type="Script" id=5]
+[ext_resource path="res://guns/Rifles/Bulldog.gd" type="Script" id=6]
+[ext_resource path="res://guns/Rifles/Guardian.gd" type="Script" id=7]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rifles" type="Node" parent="."]
+
+[node name="Vandal" type="Node" parent="Rifles" groups=[
+"guns",
+"rifles",
+]]
+script = ExtResource( 2 )
+
+[node name="Phantom" type="Node" parent="Rifles" groups=[
+"guns",
+"rifles",
+]]
+script = ExtResource( 4 )
+
+[node name="Guardian" type="Node" parent="Rifles" groups=[
+"guns",
+"rifles",
+]]
+script = ExtResource( 7 )
+
+[node name="Bulldog" type="Node" parent="Rifles" groups=[
+"guns",
+"rifles",
+]]
+script = ExtResource( 6 )
+
+[node name="SMGs" type="Node" parent="."]
+
+[node name="Spectre" type="Node" parent="SMGs" groups=[
+"guns",
+"smgs",
+]]
+script = ExtResource( 5 )
+
+[node name="Stinger" type="Node" parent="SMGs" groups=[
+"guns",
+"smgs",
+]]
+script = ExtResource( 3 )
+
+[node name="Pistols" type="Node" parent="."]
+
+[node name="Classic" type="Node" parent="Pistols" groups=[
+"guns",
+"pistols",
+]]
+
+[node name="Shorty" type="Node" parent="Pistols" groups=[
+"guns",
+"pistols",
+]]
+
+[node name="Frenzy" type="Node" parent="Pistols" groups=[
+"guns",
+"pistols",
+]]
+
+[node name="Ghost" type="Node" parent="Pistols" groups=[
+"guns",
+"pistols",
+]]
+
+[node name="Sheriff" type="Node" parent="Pistols" groups=[
+"guns",
+"pistols",
+]]
+
+[node name="Shotguns" type="Node" parent="."]
+
+[node name="Bucky" type="Node" parent="Shotguns" groups=[
+"guns",
+"shotguns",
+]]
+
+[node name="Judge" type="Node" parent="Shotguns" groups=[
+"guns",
+"shotguns",
+]]
+
+[node name="Snipers" type="Node" parent="."]
+
+[node name="OP" type="Node" parent="Snipers" groups=[
+"guns",
+"snipers",
+]]
+
+[node name="Marshal" type="Node" parent="Snipers" groups=[
+"guns",
+"snipers",
+]]
+
+[node name="LMGs" type="Node" parent="."]
+
+[node name="Odin" type="Node" parent="LMGs" groups=[
+"guns",
+"lmgs",
+]]
+
+[node name="Ares" type="Node" parent="LMGs" groups=[
+"guns",
+"lmgs",
+]]
